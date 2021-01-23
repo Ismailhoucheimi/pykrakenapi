@@ -221,8 +221,8 @@ class KrakenAPI(object):
             self.factor = 2  # down by 1 every two seconds
 
         elif tier == 'Pro':
-            self.limit = 20
-            self.factor = 1  # down by 1 every one second
+            self.limit = 180
+            self.factor = 1/3.5  # down by 1 every one second
 
         # retry timers
         self.retry = retry
